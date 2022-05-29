@@ -1,0 +1,332 @@
+/* основний колір заголовків 2-3 рівня #212121;  */
+/* основний колір тексту  #757575;*/
+/* акцент #2196f3; */
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+:root {
+  --primary-text-color: #757575;
+  --tittle-text-color: #212121;
+  --accent-color: #2196f3;
+  --main-tittle-text-color: #ffffff;
+  --typical-margin: 30px;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+body {
+  font-family: Roboto, sans-serif;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid red;
+}
+
+.link {
+  text-decoration: none;
+  display: block;
+}
+.list {
+  list-style: none;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* ----------------------header---------------------- */
+.header {
+  background: #ffffff;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+}
+/* ----------------------логотип---------------------- */
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  text-decoration: none;
+  display: block;
+  margin-right: 93px;
+}
+.logo-accent {
+  color: #000000;
+}
+
+/* ----------------------------header--меню сторінки ------------------*/
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+/* .site-nav .item:not(:last-child) {
+  margin-right: 50px;
+} */
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.site-nav .link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--tittle-text-color);
+  background: red;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+/*---------------header--- телефон,ел.пошта ------------*/
+.contact-list {
+  display: flex;
+}
+.contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+.contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+}
+/*----------- Перша секція-HERO-ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА---------*/
+.hero .container {
+}
+.hero {
+  background: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-tittle-text-color);
+  margin-bottom: var(--typical-margin);
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--main-tittle-text-color);
+  background: #2196f3;
+  cursor: pointer;
+  max-width: 200px;
+  display: block;
+  padding: 10px 32px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  min-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background: #188ce8;
+}
+/*---------------Переваги-advantage------------------ */
+.advantage {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+.advantage-item {
+  margin-right: var(--typical-margin);
+}
+.advantage-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--tittle-text-color);
+  margin-bottom: 10px;
+}
+.advantage-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+/*------------------------work--Чем мы занимаемся----------------------- */
+.work {
+  padding-bottom: 94px;
+  padding-top: 47;
+}
+.work-title {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--tittle-text-color);
+  margin-bottom: 50px;
+}
+/*-------------------Наша команда-team------------------ */
+.team {
+  background: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-top-title {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--tittle-text-color);
+  margin-bottom: 50px;
+}
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--tittle-text-color);
+  margin-bottom: 10px;
+}
+.team-text {
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+/*----------------------footer--------------------- */
+.footer {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+/* логотип-футер */
+
+.logo-footer {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: block;
+}
+.logo-accent-footer {
+  color: #ffffff;
+}
+.footer-address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-tittle-text-color);
+  margin-bottom: 9px;
+}
+.footer-contact {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-contact:hover,
+.footer-contact:focus {
+  color: var(--accent-color);
+}
+/*----------------------Сторінка 2 Портфолио- gallery--------------------- */
+.gallery {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.gallery-menu {
+  margin-bottom: 50px;
+}
+.gallery-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--tittle-text-color);
+  background: #f5f4fa;
+  border: none;
+  cursor: pointer;
+  display: block;
+
+  padding: 6px 22px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  min-width: 145px;
+}
+.gallery-btn:hover,
+.gallery-btn:focus {
+  background: #2196f3;
+  color: #ffffff;
+}
+.gallery-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+  margin-bottom: 4px;
+}
+.gallery-text {
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.gallery-list .gallary-link {
+  text-decoration: none;
+}

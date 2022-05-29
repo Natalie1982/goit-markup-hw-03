@@ -267,7 +267,9 @@ body {
 }
 .team-list .team-item + .team-item {
   margin-left: var(--typical-margin);}
-
+.team-item{
+  background: #ffffff;
+}
 .team-title {
   font-weight: 500;
   font-size: 16px;

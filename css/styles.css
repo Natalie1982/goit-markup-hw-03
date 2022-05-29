@@ -49,7 +49,6 @@ body {
 
 .link {
   text-decoration: none;
-  display: block;
 }
 .list {
   list-style: none;
@@ -73,10 +72,7 @@ body {
   padding-top: 25px;
   padding-bottom: 25px;
 }
-.header .container {
-  display: flex;
-  align-items: center;
-}
+
 /* ----------------------логотип---------------------- */
 .logo {
   font-family: Raleway, sans-serif;
@@ -86,8 +82,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
-  display: block;
-  margin-right: 93px;
 }
 .logo-accent {
   color: #000000;
@@ -96,17 +90,24 @@ body {
 /* ----------------------------header--меню сторінки ------------------*/
 .site-nav {
   display: flex;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 93px;
+}
+.header-nav {
+  display: flex;
   align-items: center;
 }
-/* .site-nav .item:not(:last-child) {
-  margin-right: 50px;
-} */
-
 .site-nav .item + .item {
   margin-left: 50px;
 }
 
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -123,11 +124,19 @@ body {
 /*---------------header--- телефон,ел.пошта ------------*/
 .contact-list {
   display: flex;
+  margin-left: auto;
 }
-.contact-item:not(:last-child) {
-  margin-right: 50px;
+
+.contact-list .contact-item + .contact-item {
+  margin-left: 50px;
 }
+
 .contact-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: aqua;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -141,6 +150,7 @@ body {
 /*----------- Перша секція-HERO-ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА---------*/
 .hero .container {
 }
+
 .hero {
   background: #2f303a;
   padding-top: 200px;

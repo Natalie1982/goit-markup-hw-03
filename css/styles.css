@@ -44,7 +44,7 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
+  
 }
 
 .link {
@@ -71,6 +71,7 @@ body {
   background: #ffffff;
   padding-top: 25px;
   padding-bottom: 25px;
+  border-bottom: #757575 solid;
 }
 
 /* ----------------------логотип---------------------- */
@@ -90,9 +91,7 @@ body {
 /* ----------------------------header--меню сторінки ------------------*/
 .site-nav {
   display: flex;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+
   margin-left: 93px;
 }
 .header-nav {
@@ -114,14 +113,17 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--tittle-text-color);
-  background: red;
-}
+ }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
 }
 /*---------------header--- телефон,ел.пошта ------------*/
+.header .container {
+  display: flex;
+  align-items: center;
+}
 .contact-list {
   display: flex;
   margin-left: auto;
@@ -134,8 +136,8 @@ body {
 .contact-link {
   display: block;
   padding-top: 32px;
-  padding-bottom: 32px;
-  background-color: aqua;
+  padding-bottom: 32px;}
+  
 
   font-weight: 500;
   font-size: 14px;
@@ -197,8 +199,17 @@ body {
   padding-top: 94px;
   padding-bottom: 47px;
 }
+
+  .advantage-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+.advantage-list .advantage-item + .advantage-item {
+  margin-left: var(--typical-margin);}
+
 .advantage-item {
-  margin-right: var(--typical-margin);
+    max-width: 270px;
 }
 .advantage-title {
   font-size: 14px;
@@ -219,12 +230,21 @@ body {
   padding-bottom: 94px;
   padding-top: 47;
 }
+.work-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.work-list .work-item + .work-item {
+  margin-left: var(--typical-margin);}
+
 .work-title {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--tittle-text-color);
   margin-bottom: 50px;
+  text-align: center;
 }
 /*-------------------Наша команда-team------------------ */
 .team {
@@ -238,7 +258,16 @@ body {
   letter-spacing: 0.03em;
   color: var(--tittle-text-color);
   margin-bottom: 50px;
+  text-align: center;
 }
+.team-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-list .team-item + .team-item {
+  margin-left: var(--typical-margin);}
+
 .team-title {
   font-weight: 500;
   font-size: 16px;
@@ -247,6 +276,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--tittle-text-color);
   margin-bottom: 10px;
+  margin-top: 30px;
 }
 .team-text {
   line-height: 1.19;
@@ -295,6 +325,12 @@ body {
 .footer-contact:focus {
   color: var(--accent-color);
 }
+.footer-list{
+  display: block;
+}
+.footer-list .footer-item:not(:last-child){
+  margin-bottom: 9px;
+}
 /*----------------------Сторінка 2 Портфолио- gallery--------------------- */
 .gallery {
   padding-top: 94px;
@@ -331,6 +367,7 @@ body {
   letter-spacing: 0.06em;
   color: #212121;
   margin-bottom: 4px;
+  margin-top: 20px;
 }
 .gallery-text {
   line-height: 1.88;
@@ -339,4 +376,30 @@ body {
 }
 .gallery-list .gallary-link {
   text-decoration: none;
+}
+.gallery-menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-menu-list{
+ display: flex;
+  align-items: center;
+  
+}
+
+.gallery-container{
+  width: 1230;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gallery-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;  
+}
+.gallery-item{
+  margin: 15px;
 }
